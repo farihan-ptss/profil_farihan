@@ -87,7 +87,7 @@
                         <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
                         <span>Semua Paparan</span>
                     </span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-royal-950/15 font-bold">8</span>
+                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-royal-950/15 font-bold">10</span>
                 </button>
 
                 <button onclick="selectTab('pengajaran')" data-nav="pengajaran" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-all cursor-pointer">
@@ -95,7 +95,7 @@
                         <i data-lucide="graduation-cap" class="w-4 h-4 text-amber-400"></i>
                         <span>Pengajaran</span>
                     </span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-white/10 text-slate-300">3</span>
+                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-white/10 text-slate-300">2</span>
                 </button>
 
                 <button onclick="selectTab('pengakap')" data-nav="pengakap" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-all cursor-pointer">
@@ -103,7 +103,7 @@
                         <i data-lucide="tent" class="w-4 h-4 text-teal-400"></i>
                         <span>Pengakap</span>
                     </span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-white/10 text-slate-300">5</span>
+                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-white/10 text-slate-300">6</span>
                 </button>
 
                 <button onclick="selectTab('akreditasi')" data-nav="akreditasi" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-all cursor-pointer">
@@ -111,7 +111,15 @@
                         <i data-lucide="file-check-2" class="w-4 h-4 text-indigo-400"></i>
                         <span>Akreditasi</span>
                     </span>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-amber-500/20 text-amber-300">Info</span>
+                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-white/10 text-slate-300">1</span>
+                </button>
+
+                <button onclick="selectTab('rnd')" data-nav="rnd" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:bg-white/5 hover:text-white transition-all cursor-pointer">
+                    <span class="flex items-center gap-3">
+                        <i data-lucide="flask-conical" class="w-4 h-4 text-purple-400"></i>
+                        <span>RnD</span>
+                    </span>
+                    <span class="px-2 py-0.5 rounded-full text-[10px] bg-white/10 text-slate-300">1</span>
                 </button>
             </nav>
         </div>
@@ -188,23 +196,11 @@
 
             <!-- KAD METRIK / KPI STATISTIK -->
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- KPI 1 -->
-                <div onclick="selectTab('all')" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:border-royal-800/40 transition-all cursor-pointer flex items-center justify-between">
-                    <div>
-                        <p class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Jumlah Pautan</p>
-                        <p class="font-heading text-2xl font-extrabold text-royal-950 mt-1">8</p>
-                        <p class="text-[11px] text-emerald-600 font-medium mt-0.5">Aktif & Tersedia</p>
-                    </div>
-                    <div class="w-11 h-11 rounded-xl bg-royal-900 text-amber-400 flex items-center justify-center shrink-0">
-                        <i data-lucide="layers" class="w-5 h-5"></i>
-                    </div>
-                </div>
-
-                <!-- KPI 2 -->
+                <!-- KPI 1: Pengajaran -->
                 <div onclick="selectTab('pengajaran')" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:border-royal-800/40 transition-all cursor-pointer flex items-center justify-between">
                     <div>
                         <p class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Pengajaran</p>
-                        <p class="font-heading text-2xl font-extrabold text-royal-950 mt-1">3</p>
+                        <p class="font-heading text-2xl font-extrabold text-royal-950 mt-1">2</p>
                         <p class="text-[11px] text-slate-500 mt-0.5">Modul & Kursus</p>
                     </div>
                     <div class="w-11 h-11 rounded-xl bg-indigo-50 text-royal-800 flex items-center justify-center shrink-0">
@@ -212,11 +208,11 @@
                     </div>
                 </div>
 
-                <!-- KPI 3 -->
+                <!-- KPI 2: Pengakap -->
                 <div onclick="selectTab('pengakap')" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:border-teal-800/40 transition-all cursor-pointer flex items-center justify-between">
                     <div>
                         <p class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Pengakap</p>
-                        <p class="font-heading text-2xl font-extrabold text-royal-950 mt-1">5</p>
+                        <p class="font-heading text-2xl font-extrabold text-royal-950 mt-1">6</p>
                         <p class="text-[11px] text-teal-700 font-medium mt-0.5">KSM & Kelana</p>
                     </div>
                     <div class="w-11 h-11 rounded-xl bg-teal-50 text-teal-800 flex items-center justify-center shrink-0">
@@ -224,15 +220,27 @@
                     </div>
                 </div>
 
-                <!-- KPI 4 -->
+                <!-- KPI 3: Akreditasi -->
                 <div onclick="selectTab('akreditasi')" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:border-amber-500/40 transition-all cursor-pointer flex items-center justify-between">
                     <div>
                         <p class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Akreditasi</p>
-                        <p class="font-heading text-lg font-extrabold text-amber-600 mt-1.5">Sedia</p>
-                        <p class="text-[11px] text-slate-500 mt-0.5">Ruangan MQA</p>
+                        <p class="font-heading text-2xl font-extrabold text-royal-950 mt-1">1</p>
+                        <p class="text-[11px] text-amber-700 font-medium mt-0.5">Portal MQA PTSS</p>
                     </div>
                     <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
                         <i data-lucide="file-check-2" class="w-5 h-5"></i>
+                    </div>
+                </div>
+
+                <!-- KPI 4: RnD -->
+                <div onclick="selectTab('rnd')" class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/90 shadow-xs hover:border-purple-600/40 transition-all cursor-pointer flex items-center justify-between">
+                    <div>
+                        <p class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">RnD</p>
+                        <p class="font-heading text-2xl font-extrabold text-royal-950 mt-1">1</p>
+                        <p class="text-[11px] text-purple-700 font-medium mt-0.5">Inovasi & Kajian</p>
+                    </div>
+                    <div class="w-11 h-11 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center shrink-0">
+                        <i data-lucide="flask-conical" class="w-5 h-5"></i>
                     </div>
                 </div>
             </div>
@@ -247,30 +255,11 @@
                             <p class="text-xs text-slate-500">Akses pantas bahan kuliah, nota interaktif dan portal kursus</p>
                         </div>
                     </div>
-                    <span class="text-xs font-bold bg-royal-900/5 text-royal-800 px-3 py-1 rounded-lg">3 Portal</span>
+                    <span class="text-xs font-bold bg-royal-900/5 text-royal-800 px-3 py-1 rounded-lg">2 Portal</span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Kad 1 -->
-                    <a href="https://farihan-ptss.github.io/logiccraft" target="_blank" rel="noopener noreferrer" class="link-card group rounded-xl p-5 bg-slate-50/70 hover:bg-white border border-slate-200/80 hover:border-royal-800 hover:shadow-md transition-all flex flex-col justify-between" data-keywords="logiccraft logik pengajaran kursus">
-                        <div>
-                            <div class="flex items-center justify-between mb-3">
-                                <div class="w-10 h-10 rounded-xl bg-royal-900 text-amber-400 flex items-center justify-center">
-                                    <i data-lucide="cpu" class="w-5 h-5"></i>
-                                </div>
-                                <span class="text-xs font-semibold text-royal-800 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
-                                    Buka <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                                </span>
-                            </div>
-                            <h4 class="font-heading font-bold text-sm text-royal-950">LogicCraft</h4>
-                            <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Platform pembelajaran interaktif asas pemikiran logik dan reka bentuk algoritma.</p>
-                        </div>
-                        <div class="mt-4 pt-3 border-t border-slate-200/70 text-[11px] font-mono text-slate-400 group-hover:text-royal-800 truncate">
-                            farihan-ptss.github.io/logiccraft
-                        </div>
-                    </a>
-
-                    <!-- Kad 2 -->
                     <a href="https://farihan-ptss.github.io/prog_fund" target="_blank" rel="noopener noreferrer" class="link-card group rounded-xl p-5 bg-slate-50/70 hover:bg-white border border-slate-200/80 hover:border-royal-800 hover:shadow-md transition-all flex flex-col justify-between" data-keywords="programming fundamentals pengaturcaraan asas kod pengajaran">
                         <div>
                             <div class="flex items-center justify-between mb-3">
@@ -320,7 +309,7 @@
                             <p class="text-xs text-slate-500">Portal KSM, Pengakap Kelana dan dokumentasi program</p>
                         </div>
                     </div>
-                    <span class="text-xs font-bold bg-teal-900/5 text-teal-800 px-3 py-1 rounded-lg">5 Portal</span>
+                    <span class="text-xs font-bold bg-teal-900/5 text-teal-800 px-3 py-1 rounded-lg">6 Portal</span>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -418,37 +407,100 @@
                             farihan-ptss.github.io/pengakap_kelana2
                         </div>
                     </a>
-                </div>
-            </section>
 
-            <!-- SEKSYEN 3: AKREDITASI -->
-            <section id="akreditasi" class="category-section bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-5" data-category="akreditasi">
-                <div class="flex items-center justify-between border-b border-slate-100 pb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="w-2.5 h-6 rounded-full bg-amber-500"></span>
+                    <!-- Kad 6 -->
+                    <a href="https://farihan-ptss.github.io/ksm_ptss/" target="_blank" rel="noopener noreferrer" class="link-card group rounded-xl p-5 bg-slate-50/70 hover:bg-white border border-slate-200/80 hover:border-teal-700 hover:shadow-md transition-all flex flex-col justify-between" data-keywords="ksm ptss kursus kepimpinan manikayu politeknik pengakap">
                         <div>
-                            <h3 class="font-heading font-bold text-base sm:text-lg text-royal-950">Akreditasi & Jaminan Kualiti</h3>
-                            <p class="text-xs text-slate-500">Dokumentasi pematuhan MQA, kurikulum dan audit akademik</p>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="w-10 h-10 rounded-xl bg-teal-900 text-amber-300 flex items-center justify-center">
+                                    <i data-lucide="award" class="w-5 h-5"></i>
+                                </div>
+                                <span class="text-xs font-semibold text-teal-800 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                                    Buka <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                                </span>
+                            </div>
+                            <h4 class="font-heading font-bold text-sm text-royal-950">KSM PTSS</h4>
+                            <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Portal rasmi Kursus Kepimpinan Manikayu (KSM) peringkat Politeknik Tuanku Syed Sirajuddin.</p>
                         </div>
-                    </div>
-                    <span class="text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 px-3 py-1 rounded-lg">Dalam Kemaskini</span>
-                </div>
-
-                <div class="rounded-xl bg-amber-50/50 border border-dashed border-amber-300 p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-5">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
-                        <i data-lucide="folder-clock" class="w-6 h-6"></i>
-                    </div>
-                    <div class="text-center sm:text-left space-y-1 flex-1">
-                        <h4 class="font-heading font-bold text-sm sm:text-base text-royal-950">Ruangan Pautan Dokumen Akreditasi</h4>
-                        <p class="text-xs text-slate-600 leading-relaxed">
-                            Slot ini dikhaskan untuk pautan dokumen MQA, fail semakan kurikulum, dan laporan akreditasi Jabatan Teknologi Maklumat dan Komunikasi (PTSS).
-                        </p>
-                    </div>
-                    <span class="text-[11px] font-semibold text-amber-800 bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300/70 shrink-0">
-                        Sedia Dikemaskini
-                    </span>
+                        <div class="mt-4 pt-3 border-t border-slate-200/70 text-[11px] font-mono text-slate-400 group-hover:text-teal-800 truncate">
+                            farihan-ptss.github.io/ksm_ptss
+                        </div>
+                    </a>
                 </div>
             </section>
+
+            <!-- GRID SEBELAHAN: AKREDITASI & RND -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- SEKSYEN 3: AKREDITASI -->
+                <section id="akreditasi" class="category-section bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-5 flex flex-col justify-between" data-category="akreditasi">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2.5 h-6 rounded-full bg-amber-500"></span>
+                            <div>
+                                <h3 class="font-heading font-bold text-base sm:text-lg text-royal-950">Akreditasi & Jaminan Kualiti</h3>
+                                <p class="text-xs text-slate-500">Dokumentasi pematuhan MQA & audit akademik</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold bg-amber-500/10 text-amber-800 px-3 py-1 rounded-lg shrink-0">1 Portal</span>
+                    </div>
+
+                    <div class="flex-1 flex flex-col">
+                        <!-- Kad Akreditasi PTSS -->
+                        <a href="https://farihan-ptss.github.io/akreditasi-ptss/" target="_blank" rel="noopener noreferrer" class="link-card group flex-1 rounded-xl p-5 bg-slate-50/70 hover:bg-white border border-slate-200/80 hover:border-amber-600 hover:shadow-md transition-all flex flex-col justify-between" data-keywords="akreditasi ptss mqa jaminan kualiti kurikulum audit">
+                            <div>
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center">
+                                        <i data-lucide="file-check-2" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="text-xs font-semibold text-amber-700 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                                        Buka <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                                    </span>
+                                </div>
+                                <h4 class="font-heading font-bold text-sm text-royal-950">Portal Akreditasi PTSS</h4>
+                                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Himpunan dokumen pematuhan MQA, semakan kurikulum dan rekod jaminan kualiti JTMK.</p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-slate-200/70 text-[11px] font-mono text-slate-400 group-hover:text-amber-700 truncate">
+                                farihan-ptss.github.io/akreditasi-ptss
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- SEKSYEN 4: RND -->
+                <section id="rnd" class="category-section bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-xs space-y-5 flex flex-col justify-between" data-category="rnd">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2.5 h-6 rounded-full bg-purple-600"></span>
+                            <div>
+                                <h3 class="font-heading font-bold text-base sm:text-lg text-royal-950">RnD (Penyelidikan & Inovasi)</h3>
+                                <p class="text-xs text-slate-500">Projek inovasi & pembangunan produk digital</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold bg-purple-500/10 text-purple-800 px-3 py-1 rounded-lg shrink-0">1 Portal</span>
+                    </div>
+
+                    <div class="flex-1 flex flex-col">
+                        <!-- Kad Inovasi - Logic Lab -->
+                        <a href="https://farihan-ptss.github.io/logic_lab/" target="_blank" rel="noopener noreferrer" class="link-card group flex-1 rounded-xl p-5 bg-slate-50/70 hover:bg-white border border-slate-200/80 hover:border-purple-600 hover:shadow-md transition-all flex flex-col justify-between" data-keywords="rnd inovasi logic lab penyelidikan logik">
+                            <div>
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="w-10 h-10 rounded-xl bg-purple-700 text-white flex items-center justify-center">
+                                        <i data-lucide="cpu" class="w-5 h-5"></i>
+                                    </div>
+                                    <span class="text-xs font-semibold text-purple-700 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                                        Buka <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                                    </span>
+                                </div>
+                                <h4 class="font-heading font-bold text-sm text-royal-950">Inovasi - Logic Lab</h4>
+                                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">Platform inovasi pembelajaran interaktif untuk penerokaan logik dan reka bentuk algoritma.</p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-slate-200/70 text-[11px] font-mono text-slate-400 group-hover:text-purple-700 truncate">
+                                farihan-ptss.github.io/logic_lab
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
 
             <!-- Mesej Tiada Hasil Carian -->
             <div id="noResults" class="hidden text-center py-12 bg-white rounded-2xl border border-slate-200 shadow-xs">
@@ -486,7 +538,8 @@
             'all': 'Ringkasan Hub Maklumat',
             'pengajaran': 'Direktori Pengajaran & Pembelajaran',
             'pengakap': 'Direktori Pengakap & Kepimpinan',
-            'akreditasi': 'Direktori Akreditasi & Kualiti'
+            'akreditasi': 'Direktori Akreditasi & Kualiti',
+            'rnd': 'Direktori RnD (Penyelidikan & Inovasi)'
         };
 
         // Kawalan Sidebar Mudah Alih
@@ -568,16 +621,6 @@
 
                 if (!matchesCategory) {
                     section.classList.add('hidden');
-                    return;
-                }
-
-                if (sectionCat === 'akreditasi') {
-                    if (query === '' || 'akreditasi kualiti mqa dokumen'.includes(query)) {
-                        section.classList.remove('hidden');
-                        totalVisibleCards++;
-                    } else {
-                        section.classList.add('hidden');
-                    }
                     return;
                 }
 
